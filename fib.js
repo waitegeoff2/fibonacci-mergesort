@@ -14,10 +14,8 @@ function fibs(number) {
     
 }
 
-fibs(6);
-
-function fibsRec(number) {
-    
+function fibsRec(number) { 
+    console.log("This was printed recursively");  
     if (number<=1) {
         return [0,1];
     }
@@ -25,9 +23,7 @@ function fibsRec(number) {
     let fibsArray = fibsRec(number - 1);
     fibsArray.push(fibsArray[fibsArray.length - 1] + fibsArray[fibsArray.length - 2]);
     console.log(fibsArray);
-    return fibsArray;
-    
+    return fibsArray;   
 }
-
 
 fibsRec(8);
